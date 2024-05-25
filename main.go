@@ -47,5 +47,6 @@ func main() {
 	route := gin.Default()
 	route.GET("/albums", getAlbums)
 	route.POST("/albums", postAlbums)
+	route.GET("/albums/:id", getAlbumByID)
 	route.Run("localhost:8080")
 }
